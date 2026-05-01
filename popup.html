@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KeySense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <span class="logo">⌨️</span>
+    <div>
+      <h1>KeySense</h1>
+      <p class="tagline">Silent burnout alarm</p>
+    </div>
+  </header>
+
+  <!-- Score ring -->
+  <div class="score-card" id="scoreCard">
+    <div class="score-number" id="scoreNumber">—</div>
+    <div class="score-label"  id="scoreLabel">Loading…</div>
+  </div>
+
+  <!-- Metrics grid -->
+  <div class="metrics" id="metricsGrid" style="display:none">
+    <div class="metric">
+      <span class="metric-val" id="mDwell">—</span>
+      <span class="metric-key">Avg dwell</span>
+    </div>
+    <div class="metric">
+      <span class="metric-val" id="mFlight">—</span>
+      <span class="metric-key">Avg flight</span>
+    </div>
+    <div class="metric">
+      <span class="metric-val" id="mBksp">—</span>
+      <span class="metric-key">Backspace %</span>
+    </div>
+    <div class="metric">
+      <span class="metric-val" id="mEvents">—</span>
+      <span class="metric-key">Keys sampled</span>
+    </div>
+  </div>
+
+  <!-- Baseline section -->
+  <div class="baseline-section">
+    <div class="baseline-info" id="baselineInfo">No baseline — score uses defaults</div>
+    <button id="btnBaseline" class="btn-primary">📐 Save Baseline</button>
+    <p class="hint">
+      Baseline = your calm typing. Save it when relaxed for a personalised score.
+    </p>
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <button id="btnRefresh" class="btn-secondary">🔄 Refresh</button>
+    <button id="btnClear"   class="btn-danger">🗑 Clear All</button>
+  </div>
+
+  <!-- Privacy note -->
+  <footer>🔒 No keystrokes are recorded — only timing patterns.</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

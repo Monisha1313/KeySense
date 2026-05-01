@@ -1,0 +1,166 @@
+/* ── KeySense Popup Styles ─────────────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #111827;
+  color: #f9fafb;
+  width: 280px;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #a5b4fc;
+}
+
+.tagline {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* ── Score card ─────────────────────────────────────────────────────────── */
+.score-card {
+  background: #1f2937;
+  border: 2px solid #4b5563;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 14px;
+  transition: border-color 0.4s ease;
+}
+
+.score-number {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  color: #f9fafb;
+  transition: color 0.4s ease;
+}
+
+.score-label {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* ── Metrics grid ───────────────────────────────────────────────────────── */
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.metric {
+  background: #1f2937;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.metric-val {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #a5b4fc;
+}
+
+.metric-key {
+  display: block;
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Baseline ───────────────────────────────────────────────────────────── */
+.baseline-section {
+  margin-bottom: 14px;
+}
+
+.baseline-info {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  min-height: 16px;
+}
+
+.hint {
+  font-size: 10px;
+  color: #4b5563;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────────────── */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 12px;
+  transition: opacity 0.15s;
+  width: 100%;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.btn-secondary {
+  background: #374151;
+  color: #d1d5db;
+}
+
+.btn-danger {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+footer {
+  font-size: 10px;
+  color: #4b5563;
+  text-align: center;
+  padding-top: 8px;
+  border-top: 1px solid #1f2937;
+}
