@@ -176,7 +176,7 @@ KeySense is a personal wellness tool and an academic/portfolio project. It is no
 
 ## 👤 Author
 
-Built by **[Your Name]** as part of a mental health technology project exploring passive, privacy-respecting stress detection.
+Built by Monisha as part of a mental health technology project exploring passive, privacy-respecting stress detection.
 
 ---
 
